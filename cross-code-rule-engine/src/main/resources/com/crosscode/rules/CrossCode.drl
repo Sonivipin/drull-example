@@ -1,0 +1,15 @@
+package com.crosscode.rules
+
+import com.crosscode.rule.engine.model.CrossCodeTableRequest
+
+//declare any global variables here
+
+rule "updated true set valid"
+
+when
+    CrossCodeTableRequest(updated == true)  
+then
+	System.out.println("The States is true, so let's notify!");
+end
+
+	
